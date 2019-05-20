@@ -1,0 +1,65 @@
+.fixed-nav {
+    .flex(space-between, @align: center);
+    padding:0 10px;
+    height: 5vh;
+    background-color: rgb(35, 42, 52);
+
+    .logo{
+        font-size: @font-medium;
+        line-height: 5vh;
+        color: white;
+    }
+
+    .recipe-search{
+        width:60%;
+        padding: 0 10px;
+        .flex(space-between);
+        background-color: white;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        
+        input{
+            width:90%;
+            height: 4vh;
+            border: none;
+            padding-top: 1vh;
+        }
+
+        .search-icon{
+            padding: 0.5vh 1vh 0 0;
+            background-color: white;
+            border: none;
+
+            img{
+                opacity: 0.5;
+            }
+        }
+    }
+
+    nav{
+        display:block;
+        padding-top: 1.1vh;
+
+        .dropdown-menu{
+            position:absolute;
+            margin-top:0.8vh;
+            width: 100%;
+            left:0%;
+            background: rgb(35, 42, 52);
+            .flex(@direction: column, @justify: space-between);
+
+            a{
+                font-size: @font-large;
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .hidden-menu{
+            display: none;
+        }
+    }
+}
