@@ -133,10 +133,10 @@ html {
   font-size: 62.5%;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 h3 {
   font-size: 2rem;
@@ -167,12 +167,12 @@ img {
 }
 .banner .tag_line {
   position: relative;
-  top: 55%;
-  left: 50%;
+  top: 50%;
+  left: 35%;
   width: fit-content;
 }
 .banner .tag_line p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #232a34;
 }
 .banner .tag_line p a {
@@ -205,8 +205,8 @@ img {
   background-color: white;
 }
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 32px;
+  height: 20px;
   display: inline-block;
   position: relative;
 }
@@ -218,8 +218,8 @@ img {
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 35px;
+  height: 3px;
   background-color: white;
   border-radius: 4px;
   position: absolute;
@@ -281,7 +281,7 @@ img {
   z-index: 1;
 }
 .fixed-nav .logo {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 5vh;
   color: white;
 }
@@ -333,7 +333,7 @@ img {
   align-content: center;
 }
 .fixed-nav nav .dropdown-menu a {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   width: 100%;
   text-align: center;
   padding: 15px 0;
@@ -360,7 +360,7 @@ img {
   }
 }
 .body-section h2 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   text-align: center;
   padding-top: 5rem;
 }
@@ -378,40 +378,17 @@ img {
 .body-section .body-container .card-content {
   height: 20vh;
 }
-#Share {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  background-color: #f5f5f5;
-}
-#Share .shareContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  padding: 15px 0;
-}
-#Share .shareContainer .whyShare {
-  width: 24%;
-}
 #Testimonials {
   background-image: url("../images/blue-background-clean-close-up-1194434.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: lighten;
   width: 100%;
-  height: 95vh;
 }
-#Testimonials .tag_line {
-  position: relative;
-  top: 55%;
-  left: 60%;
-  width: fit-content;
-}
-#Testimonials .tag_line p {
-  font-size: 2.5rem;
+#Testimonials button {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  border: 0px;
 }
