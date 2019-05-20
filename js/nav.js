@@ -1,6 +1,9 @@
-let menu = document.querySelector('.hamburgerStack');
+let menu = document.querySelector('.hamburger');
 
-menu.addEventListener('click', () => {
-    let dropdown = document.querySelector('.dropdown_menu');
-    dropdown.classList.toggle('hidden_menu');
-});
+menu.addEventListener('click', (toggle));
+
+function toggle() {
+    this.classList.toggle('is-active');
+    let dropdown = document.querySelector('.dropdown-menu');
+    dropdown.classList.toggle('hidden-menu');
+}

@@ -6,22 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/nav.js" async></script>
-    <script src="js/recipes.js" async></script>
 
 </head>
 <body>
     <div class = "container">
-        <section class = 'navBar'>
+
+        <section class = 'fixed-nav'>
             <div class="logo">chef Portfolio</div>
+            <div class="recipe-search">
+                <input placeholder="Search for recipes" type="search" value="">
+                <button class='search-icon'>
+                    <img src="images/Breezeicons-actions-22-edit-find.svg.png">
+                </button>
+            </div>
             <nav>
-                <img src="images/iconfinder_menu-alt_134216.svg" alt="menu" class="hamburgerStack">
-                <div class="dropdown_menu hidden_menu">
-                    <a href = '#'>Find a recipe</a>
-                    <a href = '#'>Sign In</a>
-                    <a href = '#'>Sign Up</a>
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button> 
+
+                <div class="dropdown-menu hidden-menu">
+                    <a href = '#'>Login</a>
+                    <a href = '#'>Join</a>
+                    <a href = '#'>Popular Recipes</a>
                     <a href = '#'>About Us</a>
                 </div>
-
             </nav>
         </section>
 
@@ -50,17 +60,68 @@
                 </div>
 
                 <div class='whyShare'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>         </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>         
                 </div>
+            </div>
+
         </section>
 
         <section class="bodySection" id="Explore">
+            <div>
+                <h2>Share Your Recipes</h2>
+            </div>
+                
+            <div class="shareContainer">
+                <div class='whyShare'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
 
+                <div class='whyShare'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class='whyShare'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class='whyShare'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>         
+                </div>
+            </div>
         </section>
 
         <section class="bodySection" id="Testimonials">
+            <div>
+                <h2>Testimonials</h2>
+            </div>
+
+            <div class="shareContainer">
+                    <div class='whyShare'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+    
+                    <div class='whyShare'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+    
+                    <div class='whyShare'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+    
+                    <div class='whyShare'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>         
+                    </div>
+            </div>
+            
+        </section>
+
+        <section class="bodySection" id="About">
 
         </section>
+
+        <footer>
+
+        </footer>
 
     </div>
 </body>
