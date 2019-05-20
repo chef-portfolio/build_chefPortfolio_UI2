@@ -1,17 +1,20 @@
 .fixed-nav {
     .flex(space-between, @align: center);
-    padding:0 10px;
+    padding:0 5px;
     height: 5vh;
-    background-color: rgb(35, 42, 52);
+    background-color: @nav-color;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 
     .logo{
-        font-size: @font-medium;
+        font-size: @font-large;
         line-height: 5vh;
-        color: white;
+        color: @nav-font;
     }
 
     .recipe-search{
-        width:60%;
+        width:50%;
         padding: 0 10px;
         .flex(space-between);
         background-color: white;
@@ -23,12 +26,17 @@
             height: 4vh;
             border: none;
             padding-top: 1vh;
+
+            &:focus{
+                outline:none;
+            }
         }
 
         .search-icon{
             padding: 0.5vh 1vh 0 0;
             background-color: white;
             border: none;
+            cursor: pointer;
 
             img{
                 opacity: 0.5;
@@ -45,7 +53,8 @@
             margin-top:0.8vh;
             width: 100%;
             left:0%;
-            background: rgb(35, 42, 52);
+            background: @nav-color;
+            animation: slide-down 0.5s ease-in;
             .flex(@direction: column, @justify: space-between);
 
             a{
@@ -54,12 +63,30 @@
                 text-align: center;
                 padding: 15px 0;
                 text-decoration: none;
-                color: white;
+                color: @nav-font;
             }
         }
 
         .hidden-menu{
             display: none;
         }
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-400px);
     }
 }
