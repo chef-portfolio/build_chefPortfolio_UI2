@@ -213,16 +213,17 @@ img {
   left: 10%;
   font-size: 3rem;
   font-family: 'Playfair Display', serif;
-  color: #232a34;
+  color: hsl(216, 29.5%, 2.1%);
+  font-weight: bold;
 }
 .banner .tag_line button {
-  background: none;
-  color: #232a34;
+  background: hsl(214, 9.5%, 32.1%);
+  color: white;
   font-size: 2rem;
   border-radius: 0.4rem;
   padding-top: 0;
   padding-bottom: 0;
-  border: 1px solid #232a34;
+  border: 1px solid hsl(215, 19.5%, 17.1%);
   cursor: pointer;
   padding: 0.6rem;
   margin-top: 3rem;
@@ -232,6 +233,9 @@ img {
 }
 .banner .tag_line button:focus {
   outline: none;
+}
+.banner .tag_line button:hover {
+  background: hsl(216, 29.5%, 2.1%);
 }
 .hamburger {
   display: inline-block;
@@ -333,7 +337,7 @@ img {
   align-content: center;
   padding: 0 1rem;
   height: 7rem;
-  background-color: #232a34;
+  background-color: hsl(215, 19.5%, 17.1%);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -375,6 +379,7 @@ img {
   margin-top: 1.7rem;
   width: 18rem;
   left: calc(100% - 18rem);
+  border: 1px solid hsl(216, 29.5%, 2.1%);
   border-radius: 0.7rem;
   height: 3.5rem;
 }
@@ -400,7 +405,7 @@ img {
   margin-top: 2rem;
   width: 50%;
   left: 0%;
-  background: #232a34;
+  background: hsl(215, 19.5%, 17.1%);
   animation: slide-in 0.5s ease-in;
   display: flex;
   justify-content: space-between;
@@ -436,6 +441,7 @@ img {
 .body-section {
   padding-top: 7rem;
   padding-bottom: 3rem;
+  height: 100vh;
 }
 .body-section h2 {
   font-size: 3rem;
@@ -472,7 +478,7 @@ img {
 }
 #testimonials h2 {
   margin: 14rem 7rem 0 0;
-  color: #232a34;
+  color: hsl(215, 19.5%, 17.1%);
 }
 #testimonials .body-container {
   padding-top: 16rem;
@@ -509,11 +515,11 @@ img {
 }
 #testimonials .active-button {
   outline: none;
-  background-color: #232a34;
+  background-color: hsl(215, 19.5%, 17.1%);
 }
 .footer {
   padding-top: 2rem;
-  background: #232a34;
+  background: hsl(214, 9.5%, 32.1%);
 }
 .footer .social {
   display: flex;
