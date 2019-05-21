@@ -132,14 +132,25 @@ table {
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', serif;
+}
 h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2.2rem;
+  font-size: 3rem;
 }
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 p {
   line-height: 1.5;
@@ -159,7 +170,7 @@ img {
 .banner {
   background-image: url("../images/black-bean-close-up-cooked-1640774.png");
   background-size: cover;
-  background-position: -5rem 0.8rem;
+  background-position: -5rem -0.8rem;
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: lighten;
   width: 100%;
@@ -178,13 +189,13 @@ img {
 .banner .tag_line {
   position: relative;
   top: 50%;
-  left: 34%;
+  left: 35%;
   width: fit-content;
 }
 @media (min-width: 360px) {
   .banner .tag_line {
-    top: 52%;
-    left: 38%;
+    top: 57%;
+    left: 39%;
   }
 }
 @media (min-width: 410px) {
@@ -198,8 +209,14 @@ img {
   }
 }
 .banner .tag_line p {
-  font-size: 2.2rem;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
   color: #232a34;
+}
+@media (max-width: 320px) {
+  .banner .tag_line p {
+    font-size: 1.8rem;
+  }
 }
 .banner .tag_line p a {
   text-decoration: underline;
@@ -312,12 +329,22 @@ img {
 }
 .fixed-nav .logo {
   font-size: 4rem;
+  font-family: 'Playfair Display', serif;
   line-height: 7rem;
   color: white;
   order: 2;
   flex-grow: 2;
   width: 60%;
   text-align: center;
+}
+@media (max-width: 320px) {
+  .fixed-nav .logo {
+    font-size: 3.2rem;
+  }
+}
+.fixed-nav .logo a {
+  text-decoration: none;
+  color: white;
 }
 .fixed-nav .recipe-search {
   order: 3;
@@ -335,13 +362,19 @@ img {
 .fixed-nav .recipe-search .dropdown-search {
   position: absolute;
   margin-top: 1.7rem;
-  width: 24rem;
-  left: calc(100% - 24rem);
+  width: 18rem;
+  left: calc(100% - 18rem);
   border-radius: 0.7rem;
   height: 3.5rem;
 }
 .fixed-nav .recipe-search .dropdown-search:focus {
   outline: none;
+}
+@media (orientation: landscape) {
+  .fixed-nav .recipe-search .dropdown-search {
+    width: 24rem;
+    left: calc(100% -24rem);
+  }
 }
 .fixed-nav .recipe-search .hidden-search {
   display: none;
@@ -371,7 +404,7 @@ img {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 .fixed-nav nav .dropdown-menu a {
-  font-size: 1.8rem;
+  font-size: 2rem;
   width: 100%;
   text-align: center;
   padding: 1.5rem 0;
@@ -389,10 +422,13 @@ img {
     transform: translateX(0px);
   }
 }
+.body-section {
+  padding-top: 7rem;
+}
 .body-section h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .body-section p {
   text-align: center;
@@ -407,6 +443,9 @@ img {
 }
 .body-section .body-container .card-content {
   height: 20vh;
+}
+#Share {
+  background: rgba(35, 42, 52, 0.1);
 }
 #Testimonials {
   background-image: url("../images/blue-background-clean-close-up-1194434.png");
