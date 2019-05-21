@@ -1,56 +1,65 @@
 .fixed-nav {
-    .flex(space-between, @align: center);
-    padding:0 0.5rem;
-    height: 4rem;
+
+    .flex(space-between);
+    padding:0 1rem;
+    height: 7rem;
     background-color: @nav-color;
     position: fixed;
     width: 100%;
     z-index: 1;
 
     .logo{
-        font-size: @font-large;
-        line-height: 4rem;
+        font-size: @font-huge;
+        line-height: 7rem;
         color: @nav-font;
+        order: 2;
+        flex-grow: 2;
+        width: 60%;
+        text-align: center;
     }
 
     .recipe-search{
-        width:48%;
-        padding: 0 0.5rem;
-        .flex(space-between);
-        background-color: white;
-        border: 0.2rem solid lightgray;
+        order: 3;
+        padding-top: 1.5rem;
         border-radius: 1rem;
         margin: 0.4rem 0;
-        
-        input{
-            width:95%;
-            border: none;
+        display: block;
 
+        .search-icon{
+            cursor: pointer;
+            img{
+                opacity: 1;
+            }
+        }
+        
+        .dropdown-search{
+            position: absolute;
+            margin-top: 1.7rem;
+            width: 18rem;
+            left: calc(100% - 18rem);
+            border-radius:0.7rem;
+            height: 3.5rem;
             &:focus{
                 outline:none;
             }
+
         }
 
-        .search-icon{
-            background-color: white;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-
-            img{
-                opacity: 0.5;
-            }
+        .hidden-search{
+            display:none;
         }
+            
     }
 
     nav{
+        order: 1;
         display:block;
-        padding-top: 1rem;
+        padding-top: 2.5rem;
 
         .dropdown-menu{
             position:absolute;
-            margin-top: 0.6rem;
-            width: 100%;
+            margin-top: 2rem;
+            width: 50%;
             left:0%;
             background: @nav-color;
             animation: slide-in 0.5s ease-in;
@@ -74,14 +83,15 @@
         }
 
         .hidden-menu{
-            display: none;
+            display:none;
         }
     }
 }
 
+
 @keyframes slide-in {
     from {
-        transform: translateX(200px);
+        transform: translateX(-200px);
     }
     to{
         transform: translateX(0px);

@@ -10,7 +10,8 @@
   background-color: transparent;
   border: 0;
   margin: 0;
-  overflow: visible; }
+  overflow: visible;
+padding: 0; }
 
   .hamburger:hover {
     opacity: 1; }
@@ -24,20 +25,20 @@
     background-color: @nav-font; }
 
 .hamburger-box {
-  width: 32px;
-  height: 20px;
+  width: 3.5rem;
+  height: 2rem;
   display: inline-block;
   position: relative; }
 
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; }
+  margin-top: -0.2rem; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 35px;
-    height: 3px;
+    width: 3.5rem;
+    height: 0.27rem;
     background-color: @nav-font;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
@@ -46,10 +47,10 @@
     content: "";
     display: block; }
   .hamburger-inner::before {
-    top: -10px; }
+    top: -1rem; }
   .hamburger-inner::after {
-    bottom: -10px; }
-    
+    bottom: -1rem; }
+
     .hamburger--vortex .hamburger-inner {
         transition-duration: 0.2s;
         transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
