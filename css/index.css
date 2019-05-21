@@ -481,6 +481,17 @@ img {
   background-blend-mode: lighten;
   width: 100%;
 }
+#discover p {
+  width: 50%;
+  margin-top: 5rem;
+}
+#discover .body-container {
+  margin-left: 1.5rem;
+  padding-top: 1rem;
+}
+#discover .body-container .card-content {
+  padding: 2rem;
+}
 #featured-recipe p {
   font-family: white;
   font-size: 1.9rem;
@@ -598,6 +609,10 @@ img {
   color: white;
   width: 20%;
   font-size: 1.4rem;
+  cursor: pointer;
+}
+.footer .social a:hover {
+  text-decoration: underline;
 }
 .footer h3 {
   text-align: center;
