@@ -1,5 +1,5 @@
 .body-section{
-    padding-top:7rem;
+    padding-top:6rem;
     padding-bottom: 3rem;
     height: 100vh;
 
@@ -18,25 +18,40 @@
         padding-top: 5rem;
 
     }
+
+    .next-section{
+        position: relative;
+        width: 50%;
+        left: 50%;
+        margin-top: 2rem;
+
+        a{
+            text-decoration: underline;
+            color: @nav-color;
+            font-size: 1.75rem;
+        }
+    }
 }
 
 #share{
 
-    h2{
-        margin-top: 2rem;
-    }
 }
 
 #discover{
-    background-image: url("../images/blue-background-clean-close-up-1194434.png");
-    background-size: cover;
-    background-color: rgba(255,255,255,0.7);
-    background-blend-mode: lighten;
-    width: 100%;
+    // background-image: url("../images/blue-background-clean-close-up-1194434.png");
+    // background-size: cover;
+    // background-color: rgba(255,255,255,0.7);
+    // background-blend-mode: lighten;
+    // width: 100%;
+    background: @light-color;
 
+    h2{
+        color:white;
+    }
     p{
         width:50%;
         margin-top: 5rem;
+        color: white;
     }
 
     .body-container{
@@ -45,6 +60,13 @@
 
         .card-content{
             padding:2rem;
+            color:white;
+        }
+    }
+
+    .next-section{
+        a{
+        color:white;
         }
     }
 }
@@ -90,20 +112,7 @@
         margin: 0 auto;
         border-radius:0.8rem;
     }
-
-    .why-us{
-        position: relative;
-        width: 50%;
-        left: 50%;
-        margin-top: 2rem;
-
-        a{
-            text-decoration: underline;
-            color: @nav-color;
-            font-size: 1.75rem;
-        }
-    }
-    
+   
     
 }
 

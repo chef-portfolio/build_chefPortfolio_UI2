@@ -450,7 +450,7 @@ img {
   }
 }
 .body-section {
-  padding-top: 7rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
   height: 100vh;
 }
@@ -470,19 +470,27 @@ img {
   align-content: center;
   padding-top: 5rem;
 }
-#share h2 {
+.body-section .next-section {
+  position: relative;
+  width: 50%;
+  left: 50%;
   margin-top: 2rem;
 }
+.body-section .next-section a {
+  text-decoration: underline;
+  color: hsl(215, 19.5%, 17.1%);
+  font-size: 1.75rem;
+}
 #discover {
-  background-image: url("../images/blue-background-clean-close-up-1194434.png");
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: lighten;
-  width: 100%;
+  background: hsl(214, 9.5%, 32.1%);
+}
+#discover h2 {
+  color: white;
 }
 #discover p {
   width: 50%;
   margin-top: 5rem;
+  color: white;
 }
 #discover .body-container {
   margin-left: 1.5rem;
@@ -490,6 +498,10 @@ img {
 }
 #discover .body-container .card-content {
   padding: 2rem;
+  color: white;
+}
+#discover .next-section a {
+  color: white;
 }
 #featured-recipe p {
   font-family: white;
@@ -528,17 +540,6 @@ img {
   display: block;
   margin: 0 auto;
   border-radius: 0.8rem;
-}
-#featured-recipe .why-us {
-  position: relative;
-  width: 50%;
-  left: 50%;
-  margin-top: 2rem;
-}
-#featured-recipe .why-us a {
-  text-decoration: underline;
-  color: hsl(215, 19.5%, 17.1%);
-  font-size: 1.75rem;
 }
 #testimonials {
   background-image: url("../images/background-black-cast-iron-1435909.png");
