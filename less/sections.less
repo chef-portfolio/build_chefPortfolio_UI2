@@ -14,9 +14,6 @@
         .flex(@direction: column);
         padding-top: 5rem;
 
-        .card-content{
-            height: 20vh;
-        }
     }
 }
 
@@ -26,7 +23,7 @@
 #discover{
     background-image: url("../images/blue-background-clean-close-up-1194434.png");
     background-size: cover;
-    background-position: -5rem -0.8rem;
+    background-position: -5rem;
     background-color: rgba(255,255,255,0.7);
     background-blend-mode: lighten;
     width: 100%;
@@ -36,15 +33,56 @@
     background-image: url("../images/background-black-cast-iron-1435909.png");
     background-size: cover;
     background-position: -45rem;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
     width: 100%;
+    height: 71rem;
+
+    h2{
+        margin: 14rem 7rem 0 0;
+        color: @nav-color;
+    }
+
+    .body-container {
+        padding-top: 16rem;
+        padding-bottom: 3rem;
+    }
+    .card-content{
+        display: none;
+        padding: 0 3rem;
+
+        p{
+            font-style: italic;
+        }
+
+        span{
+            font-style: none;
+            font-weight: bold;
+        }
+    }
+
+    .active{
+        display: block;
+    }
+    .testimonial-selector{
+
+        ol{
+            .flex();
+        }
+    }
 
     button{
-        width:16px;
-        height: 16px;
-        border-radius: 16px;
-        border: 0px;
+        width:1.4rem;
+        height: 1.4rem;
+        border-radius: 1.4rem;
+        border: 0;
+        margin: 0.2rem;
+        background-color: white;
+    }
+
+    .active-button{
+        outline: none;
+        background-color: @nav-color;
     }
 }
 

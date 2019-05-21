@@ -441,13 +441,10 @@ img {
   align-content: center;
   padding-top: 5rem;
 }
-.body-section .body-container .card-content {
-  height: 20vh;
-}
 #discover {
   background-image: url("../images/blue-background-clean-close-up-1194434.png");
   background-size: cover;
-  background-position: -5rem -0.8rem;
+  background-position: -5rem;
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
   width: 100%;
@@ -456,13 +453,49 @@ img {
   background-image: url("../images/background-black-cast-iron-1435909.png");
   background-size: cover;
   background-position: -45rem;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
   width: 100%;
+  height: 71rem;
+}
+#testimonials h2 {
+  margin: 14rem 7rem 0 0;
+  color: #232a34;
+}
+#testimonials .body-container {
+  padding-top: 16rem;
+  padding-bottom: 3rem;
+}
+#testimonials .card-content {
+  display: none;
+  padding: 0 3rem;
+}
+#testimonials .card-content p {
+  font-style: italic;
+}
+#testimonials .card-content span {
+  font-style: none;
+  font-weight: bold;
+}
+#testimonials .active {
+  display: block;
+}
+#testimonials .testimonial-selector ol {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
 }
 #testimonials button {
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
-  border: 0px;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 1.4rem;
+  border: 0;
+  margin: 0.2rem;
+  background-color: white;
+}
+#testimonials .active-button {
+  outline: none;
+  background-color: #232a34;
 }
