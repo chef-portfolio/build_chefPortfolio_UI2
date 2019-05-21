@@ -1,7 +1,7 @@
 .banner{
     background-image: url("../images/black-bean-close-up-cooked-1640774.png");
     background-size: cover;
-    background-position: -5rem 0.8rem;
+    background-position: -5rem -0.8rem;
     background-color: rgba(255,255,255,0.4);
     background-blend-mode: lighten;
     width: 100%;
@@ -14,15 +14,16 @@
     @media (orientation: landscape){
         background-position: 0rem;
     }
+
     .tag_line{
         position: relative;
         top: 50%;
-        left:34%;
+        left:35%;
         width: fit-content;
 
         @media (min-width:360px){
-            top:52%;
-            left:38%;
+            top:57%;
+            left:39%;
         }
 
         @media (min-width:410px){
@@ -33,9 +34,15 @@
             left: 30%;
         }
 
+
         p{
-            font-size: @font-large;
+            font-size: @font-medium;
+            font-family: @font-headers;
             color: rgb(35,42,52);
+
+            @media(max-width: 320px){
+                font-size: 1.8rem;
+            }
 
             a{
                 text-decoration: underline;
