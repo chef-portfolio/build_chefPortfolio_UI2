@@ -22,7 +22,7 @@
         width: fit-content;
 
         @media (min-width:360px){
-            top:57%;
+            top:52%;
             left:39%;
         }
 
@@ -34,19 +34,26 @@
             left: 30%;
         }
 
-
-        p{
-            font-size: @font-medium;
+        span{
+            position:relative;
+            left:10%;
+            font-size: @font-large;
             font-family: @font-headers;
-            color: rgb(35,42,52);
+            color: @nav-color;
+        }
 
-            @media(max-width: 320px){
-                font-size: 1.8rem;
-            }
+        button{
+            .button-design(@color:none, @font-color: @nav-color, @font-size: @font-medium, @radius: 0.4rem, @top: 0, @bottom: 0);
+            border: 1px solid @nav-color;
+            cursor: pointer;
+            padding: 0.6rem;
+            margin-top: 3rem;
+            width: 20rem;
+            position: relative;
+            left: 7%;
 
-            a{
-                text-decoration: underline;
-                color: rgb(35, 42, 52);
+            &:focus{
+                outline:none;
             }
         }
     }

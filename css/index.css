@@ -194,7 +194,7 @@ img {
 }
 @media (min-width: 360px) {
   .banner .tag_line {
-    top: 57%;
+    top: 52%;
     left: 39%;
   }
 }
@@ -208,19 +208,30 @@ img {
     left: 30%;
   }
 }
-.banner .tag_line p {
-  font-size: 2rem;
+.banner .tag_line span {
+  position: relative;
+  left: 10%;
+  font-size: 3rem;
   font-family: 'Playfair Display', serif;
   color: #232a34;
 }
-@media (max-width: 320px) {
-  .banner .tag_line p {
-    font-size: 1.8rem;
-  }
-}
-.banner .tag_line p a {
-  text-decoration: underline;
+.banner .tag_line button {
+  background: none;
   color: #232a34;
+  font-size: 2rem;
+  border-radius: 0.4rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #232a34;
+  cursor: pointer;
+  padding: 0.6rem;
+  margin-top: 3rem;
+  width: 20rem;
+  position: relative;
+  left: 7%;
+}
+.banner .tag_line button:focus {
+  outline: none;
 }
 .hamburger {
   display: inline-block;
@@ -424,6 +435,7 @@ img {
 }
 .body-section {
   padding-top: 7rem;
+  padding-bottom: 3rem;
 }
 .body-section h2 {
   font-size: 3rem;
@@ -498,4 +510,30 @@ img {
 #testimonials .active-button {
   outline: none;
   background-color: #232a34;
+}
+.footer {
+  background: #232a34;
+}
+.footer .social {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin: 1.5rem;
+}
+.footer .social a {
+  text-decoration: none;
+  color: white;
+  width: 20%;
+  font-size: 1.6rem;
+}
+.footer h3 {
+  text-align: center;
+  color: white;
+}
+.footer p {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
 }
