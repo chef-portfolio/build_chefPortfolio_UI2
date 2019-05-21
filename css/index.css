@@ -476,7 +476,6 @@ img {
 #discover {
   background-image: url("../images/blue-background-clean-close-up-1194434.png");
   background-size: cover;
-  background-position: -5rem;
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
   width: 100%;
@@ -551,9 +550,10 @@ img {
   height: 71rem;
 }
 #testimonials h2 {
-  margin: 14rem 7rem 0 0;
+  margin: 14rem 0 0 3rem;
   color: hsl(216, 29.5%, 2.1%);
   font-weight: bold;
+  width: fit-content;
 }
 #testimonials .body-container {
   padding-top: 16rem;
