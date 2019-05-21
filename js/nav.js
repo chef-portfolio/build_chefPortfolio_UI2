@@ -15,5 +15,4 @@ let searchButton = document.querySelector('.search-icon');
 
 searchButton.addEventListener('click', () => {
     searchBar.classList.toggle('hidden-search');
-    dropdown.classList.add('hidden-menu');
 });
