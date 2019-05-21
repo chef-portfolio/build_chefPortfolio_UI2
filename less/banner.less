@@ -39,11 +39,12 @@
             left:10%;
             font-size: @font-large;
             font-family: @font-headers;
-            color: @nav-color;
+            color: @dark-color;
+            font-weight: bold;
         }
 
         button{
-            .button-design(@color:none, @font-color: @nav-color, @font-size: @font-medium, @radius: 0.4rem, @top: 0, @bottom: 0);
+            .button-design(@color:@light-color, @font-color: white, @font-size: @font-medium, @radius: 0.4rem, @top: 0, @bottom: 0);
             border: 1px solid @nav-color;
             cursor: pointer;
             padding: 0.6rem;
@@ -54,6 +55,10 @@
 
             &:focus{
                 outline:none;
+            }
+
+            &:hover{
+                background: @dark-color;
             }
         }
     }
