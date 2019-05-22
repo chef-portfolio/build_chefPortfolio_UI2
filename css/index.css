@@ -558,6 +558,11 @@ img {
   font-size: 1.5rem;
   margin: auto;
 }
+@media (min-width: 768px) {
+  #share .card-content p {
+    font-size: 2rem;
+  }
+}
 #share .card-content img {
   width: 50%;
   max-width: 300px;
@@ -584,6 +589,7 @@ img {
 }
 #featured-recipe {
   background: white;
+  max-height: 700px;
 }
 #featured-recipe P {
   margin-top: 2rem;
@@ -622,6 +628,12 @@ img {
 }
 #discover {
   background: #5a6474;
+  max-height: 700px;
+}
+@media (min-width: 768px) {
+  #discover {
+    max-height: 100vh;
+  }
 }
 #discover h2 {
   color: white;
@@ -688,6 +700,7 @@ img {
 }
 #testimonials {
   background: #5a6474;
+  max-height: 700px;
 }
 #testimonials .testimonial-info h2 {
   color: white;
