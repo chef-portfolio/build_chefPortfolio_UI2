@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background: rgba(240, 128, 128, 0.2);
+  background: rgba(84, 112, 107, 0.4);
 }
 h1,
 h2,
@@ -196,17 +196,17 @@ img {
   left: 10%;
   font-size: 3rem;
   font-family: 'Playfair Display', serif;
-  color: hsl(216, 29.5%, 2.1%);
+  color: #0c1725;
   font-weight: bold;
 }
 .banner .tag_line button {
-  background: hsl(214, 9.5%, 32.1%);
+  background: #5a6474;
   color: white;
   font-size: 2rem;
   border-radius: 0.4rem;
   padding-top: 0;
   padding-bottom: 0;
-  border: 1px solid hsl(215, 19.5%, 17.1%);
+  border: 1px solid #232a34;
   cursor: pointer;
   padding: 0.6rem;
   margin-top: 3rem;
@@ -218,7 +218,7 @@ img {
   outline: none;
 }
 .banner .tag_line button:hover {
-  background: hsl(216, 29.5%, 2.1%);
+  background: #0c1725;
 }
 .banner .tag_line div {
   position: relative;
@@ -228,7 +228,7 @@ img {
 }
 .banner .tag_line div a {
   text-decoration: underline;
-  color: hsl(215, 19.5%, 17.1%);
+  color: #232a34;
   font-size: 1.75rem;
 }
 .hamburger {
@@ -329,7 +329,7 @@ img {
   transform: rotate(90deg);
 }
 .fixed-nav {
-  background-color: hsl(215, 19.5%, 17.1%);
+  background-color: #232a34;
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -393,7 +393,7 @@ img {
   margin-top: 2rem;
   width: 50%;
   left: 0%;
-  background: hsl(215, 19.5%, 17.1%);
+  background: #232a34;
   animation: slide-in 0.5s ease-in;
   display: flex;
   justify-content: space-between;
@@ -486,7 +486,7 @@ img {
 }
 .footer {
   padding-top: 2rem;
-  background: hsl(215, 19.5%, 17.1%);
+  background: #232a34;
 }
 .footer .social {
   display: flex;
@@ -568,14 +568,14 @@ img {
   outline: none;
 }
 #share a button {
-  background: hsl(215, 19.5%, 17.1%);
+  background: #232a34;
   color: white;
   font-size: 1.6rem;
   border-radius: 0.4rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: 'Roboto', sans-serif;
-  border: 1px solid hsl(215, 19.5%, 17.1%);
+  border: 1px solid #232a34;
   width: 20rem;
   display: block;
   margin: 2rem auto 0;
@@ -600,7 +600,7 @@ img {
   outline: none;
 }
 #featured-recipe form button {
-  background: hsl(215, 19.5%, 17.1%);
+  background: #232a34;
   color: white;
   font-size: 1.6rem;
   border-radius: 0.4rem;
@@ -621,7 +621,7 @@ img {
   border-radius: 0.8rem;
 }
 #discover {
-  background: hsl(214, 9.5%, 32.1%);
+  background: #5a6474;
 }
 #discover h2 {
   color: white;
@@ -673,13 +673,13 @@ img {
 }
 #discover .body-container a button {
   background: white;
-  color: hsl(215, 19.5%, 17.1%);
+  color: #232a34;
   font-size: 1.6rem;
   border-radius: 0.4rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: 'Roboto', sans-serif;
-  border: 1px solid hsl(215, 19.5%, 17.1%);
+  border: 1px solid #232a34;
   width: 20rem;
   display: block;
   margin: 2rem auto 0;
@@ -687,7 +687,7 @@ img {
   cursor: pointer;
 }
 #testimonials {
-  background: hsl(214, 9.5%, 32.1%);
+  background: #5a6474;
 }
 #testimonials .testimonial-info h2 {
   color: white;
@@ -735,7 +735,7 @@ img {
 }
 #testimonials .testimonial-info .testimonial-selector .active-button {
   outline: none;
-  background-color: hsl(215, 19.5%, 17.1%);
+  background-color: #232a34;
 }
 #testimonials .mission-statement {
   color: white;
