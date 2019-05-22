@@ -1,5 +1,5 @@
 .body-section{
-    padding-top:6rem;
+    padding-top:7rem;
     padding-bottom: 3rem;
     height: 100vh;
 
@@ -11,24 +11,34 @@
 
     p{
         text-align: center;
+        font-size: @font-medium;
+        width: 90%;
+        margin: 0 auto;
+        font-family: @font-body;
     }
+
 
     .body-container{
         .flex(@direction: column);
-        padding-top: 5rem;
+    }
 
+    .important-text{
+        font-style: italic;
+        font-size: 2.2rem;
+        margin-top: 2rem;
     }
 
     .next-section{
         position: relative;
-        width: 50%;
-        left: 50%;
+        left: 60%;
+        bottom: -5rem;
         margin-top: 2rem;
+        width: fit-content;
 
         a{
             text-decoration: underline;
             color: @nav-color;
-            font-size: 1.75rem;
+            font-size: 1.55rem;
         }
     }
 }
@@ -38,39 +48,38 @@
 }
 
 #discover{
-    // background-image: url("../images/blue-background-clean-close-up-1194434.png");
-    // background-size: cover;
-    // background-color: rgba(255,255,255,0.7);
-    // background-blend-mode: lighten;
-    // width: 100%;
     background: @light-color;
 
     h2{
         color:white;
     }
+
     p{
-        width:80%;
-        margin: 2rem auto 0;
         color: white;
     }
-    img{
-        
-        margin: 2rem auto 0;
-        display:block;
-        
+
+    hr {
+        margin: 2rem 0;
+        border: 0;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     }
+
     .body-container{
-        margin-left: 1.5rem;
         padding-top: 1rem;
 
-        .card-content{
+        .search-features-list{
 
             ul{ 
                 color:white;
-                margin-left:30%;
                 font-size: @font-small;
                 font-family: @font-body;
                 list-style-type: disc;
+                list-style-position: inside;
+                display: block;
+                margin: 0 auto;
+                width: fit-content;
                 li{
                     padding: 0.5rem;
                 }
@@ -78,8 +87,19 @@
         }
 
         a{
+            text-decoration: none;
+            outline: none;
+
             button{
-                .button-design(white, @nav-color, @font-medium, 0.3rem);
+                .button-design(white, @nav-color, 1.6rem, 0.4rem);
+                font-family: @font-body;
+                border: 1px solid @nav-color;
+                width: 50%;
+                display: block;
+                margin: 2rem auto 0;
+                outline: none;
+                cursor: pointer;
+
             }
         }
     }
@@ -87,28 +107,20 @@
     .next-section{
         a{
         color:white;
+        text-decoration: underline;
         }
     }
 }
 
 #featured-recipe{
-    p{
-        font-family: @body-font;
-        font-size: 1.9rem;
-        padding-top:2rem;
-    }
-
     form{
-        p{
-        font-size: 1.7rem
-        }
-
         .email{
-            border-radius: 0.5rem;
-            height: 2.5rem;
+            border-radius: 0.4em;
+            height: 3rem;
             width: 20rem;
-            margin: 2rem auto 0 auto;
+            margin: 2rem auto 0;
             display: block;
+            padding-left:0.5rem;
 
             &:focus{
                 outline: none;
@@ -117,7 +129,7 @@
 
         button{
             .button-design(@nav-color, white, 1.6rem, 0.4rem);
-            font-family: @body-font;
+            font-family: @font-body;
             width: 50%;
             display: block;
             border: 0;
@@ -155,42 +167,46 @@
     .body-container {
         padding-top: 16rem;
         padding-bottom: 3rem;
-    }
-    .card-content{
-        display: none;
-        padding: 0 3rem;
+    
+        .card-content{
+            display: none;
+            padding: 0 3rem;
 
-        p{
-            font-style: italic;
+            p{
+                font-style: italic;
+                font-size: @font-small;
+            }
+
+            span{
+                font-style: none;
+                font-weight: bold;
+            }
         }
 
-        span{
-            font-style: none;
-            font-weight: bold;
+        .active{
+            display: block;
         }
     }
 
-    .active{
-        display: block;
-    }
     .testimonial-selector{
 
         ol{
             .flex();
         }
+
+        button{
+            width:1.4rem;
+            height: 1.4rem;
+            border-radius: 1.4rem;
+            border: 0;
+            margin: 0.2rem;
+            background-color: white;
+        }
+
+        .active-button{
+            outline: none;
+            background-color: @nav-color;
+        }
     }
 
-    button{
-        width:1.4rem;
-        height: 1.4rem;
-        border-radius: 1.4rem;
-        border: 0;
-        margin: 0.2rem;
-        background-color: white;
-    }
-
-    .active-button{
-        outline: none;
-        background-color: @nav-color;
-    }
 }
