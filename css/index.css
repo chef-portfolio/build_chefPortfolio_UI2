@@ -185,6 +185,7 @@ img {
   background-blend-mode: lighten;
   width: 100%;
   height: 100vh;
+  min-height: 650px;
 }
 .banner .tag_line {
   position: relative;
@@ -488,6 +489,7 @@ img {
 .footer {
   padding-top: 2rem;
   background: #232a34;
+  padding-bottom: 2rem;
 }
 .footer .social {
   display: flex;
@@ -519,6 +521,12 @@ img {
 }
 #share {
   background: white;
+  min-height: 650px;
+}
+@media (min-width: 600px) {
+  #share {
+    min-height: 900px;
+  }
 }
 #share .body-container {
   justify-content: space-around;
@@ -590,6 +598,7 @@ img {
 }
 #featured-recipe {
   background: white;
+  min-height: 600px;
   max-height: 700px;
 }
 #featured-recipe P {
@@ -629,21 +638,32 @@ img {
 }
 #discover {
   background: #5a6474;
-  height: 606px;
+  max-height: 700px;
 }
 @media (min-width: 768px) {
   #discover {
-    height: 928px;
+    min-height: 900px;
   }
 }
 #discover h2 {
   color: white;
 }
 #discover .important-text {
-  margin-top: 2rem;
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  #discover .important-text {
+    margin-top: 2rem;
+  }
 }
 #discover p {
   color: white;
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  #discover p {
+    margin-top: 0;
+  }
 }
 #discover hr {
   margin: 2rem 0;
@@ -687,26 +707,21 @@ img {
   outline: none;
   cursor: pointer;
 }
-#curveUpColor path {
-  fill: white;
-  stroke: white;
-  display: block;
-}
-.ss-style-doublediagonal {
+.ss-style-doublediagonal-backwards {
   z-index: 1;
-  padding-top: 6em;
+  padding-top: 1rem;
   background: #5a6474;
   position: relative;
 }
-.ss-style-doublediagonal::before,
-.ss-style-doublediagonal::after {
-  top: 0;
-  left: -25%;
+.ss-style-doublediagonal-backwards::before,
+.ss-style-doublediagonal-backwards::after {
+  top: 1rem;
+  left: 125%;
   z-index: -1;
   width: 150%;
-  height: 75%;
+  height: 600%;
   background: inherit;
-  transform: rotate(-2deg);
+  transform: rotate(178deg);
   transform-origin: 0 0;
   content: '';
   display: block;
@@ -715,14 +730,15 @@ img {
   box-sizing: border-box;
   overflow: hidden;
 }
-.ss-style-doublediagonal::before {
-  height: 70%;
+.ss-style-doublediagonal-backwards::before {
+  height: 600%;
   background: #0c1725;
-  transform: rotate(-4deg);
-  transform-origin: 0% 0;
+  transform: rotate(176deg);
+  transform-origin: 0% 0%;
 }
 #testimonials {
   background: #5a6474;
+  min-height: 600px;
   max-height: 700px;
   padding: 0;
 }
@@ -746,8 +762,6 @@ img {
 }
 #testimonials .testimonial-info .body-container .card-content span {
   font-style: none;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
 }
 #testimonials .testimonial-info .body-container .active {
   display: block;
@@ -778,6 +792,35 @@ img {
   color: white;
   font-size: 1.5rem;
   margin-top: 10rem;
+}
+.ss-style-doublediagonal {
+  z-index: 1;
+  padding-top: 6em;
+  background: #5a6474;
+  position: relative;
+}
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  transform: rotate(-2deg);
+  transform-origin: 0 0;
+  content: '';
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.ss-style-doublediagonal::before {
+  height: 70%;
+  background: #0c1725;
+  transform: rotate(-4deg);
+  transform-origin: 0% 0;
 }
 .carousel {
   width: 60%;

@@ -1,21 +1,27 @@
 #discover{
     background: @light-color;
-    height: 606px;
-
-    @media(min-width:768px){
-        height:928px;
+    max-height: 700px;
+    @media (min-width:768px){
+        min-height: 900px;
     }
     h2{
         color:white;
     }
 
     .important-text{
-        margin-top: 2rem;
+        margin-top: 4rem;
+        @media(min-width:768px){
+            margin-top:2rem;
+        }
     }
     p{
         color: white;
-    }
+        margin-top: 4rem;
 
+        @media(min-width:768px){
+            margin-top: 0;
+        }
+    }
     hr {
         margin: 2rem 0;
         border: 0;
@@ -64,8 +70,34 @@
 
 }
 
-#curveUpColor path {
-	fill: white;
-    stroke: white;
-    display: block;
+.ss-style-doublediagonal-backwards {
+	z-index: 1;
+	padding-top: 1rem;
+    background: @light-color;
+    position: relative;
+    
+        &::before,
+        &::after {
+            top: 1rem;
+            left: 125%;
+            z-index: -1;
+            width: 150%;
+            height: 600%;
+            background: inherit;
+            transform: rotate(178deg);
+            transform-origin: 0 0;
+            content: '';
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        &::before{
+            height: 600%;
+            background: @dark-color;
+            transform: rotate(176deg);
+            transform-origin: 0% 0%;
+        }
 }
