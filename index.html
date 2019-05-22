@@ -9,34 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/nav.js" async></script>
     <script src="js/testimonials.js" async></script>
+    <script src="js/Carousel.js" async></script>
 
 </head>
 <body>
+    
+    <!-- Navigation Bar with Hamburger Stack -->
+    <section class = 'fixed-nav'>
+        <div class='inner-nav'>
+        <div class="logo"><a href='#home'>chef portfolio</a></div>
+        
+        <div class="recipe-search">
+            <div class='search-icon'><a href="https://chef-portfolio.netlify.com/"><img src="images/Antu_dialog-icon-preview.svg.png"></a></div>
+        </div>
+        
+        <nav>
+            <button class="hamburger hamburger--vortex" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button> 
+            
+            <div class="dropdown-menu hidden-menu">
+                <a href = 'https://chef-portfolio.netlify.com/manage'>Login</a><hr>
+                <a href = 'https://chef-portfolio.netlify.com/manage'>Join</a><hr>
+                <a href = '#'>Featured Recipe</a><hr>
+                <a href = '#'>About Us</a>
+            </div>
+        </nav>
+        </div>
+    </section>
+
+    <!-- Start of container -->
     <div class = "container">
 
-        <section class = 'fixed-nav'>
-            <div class="logo"><a href='#home'>chef portfolio</a></div>
-
-            <div class="recipe-search">
-                <div class='search-icon'><a href="https://chef-portfolio.netlify.com/"><img src="images/Antu_dialog-icon-preview.svg.png"></a></div>
-            </div>
-
-            <nav>
-                <button class="hamburger hamburger--vortex" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button> 
-
-                <div class="dropdown-menu hidden-menu">
-                    <a href = 'https://chef-portfolio.netlify.com/manage'>Login</a><hr>
-                    <a href = 'https://chef-portfolio.netlify.com/manage'>Join</a><hr>
-                    <a href = '#'>Featured Recipe</a><hr>
-                    <a href = '#'>About Us</a>
-                </div>
-            </nav>
-        </section>
-
+        <!-- Home page banner -->
         <section class="banner" id="home">
             <div class="tag_line">
                 <span>Cook happier.</span><br>
@@ -45,11 +52,12 @@
                 <div><a href='#share'>Learn More</a></div>
             </div>
         </section>
-        
+
+        <!-- Sharing Recipes Section -->
         <section class = "body-section" id="share">
             <div>
                 <h2>Sharing Recipes</h2>
-                <p class="important-text">Sharing recipes has never been easier.</p>
+                <p class="important-text">Sharing recipes has never been easier than our user-friendly templates.</p>
             </div>
             <div class="body-container">
                 <div class='card-content'>
@@ -68,10 +76,9 @@
                 </div>
             </div>
             <a href="https://chef-portfolio.netlify.com/manage"><button id="share-link">Share my recipes</button></a> <br>
-            <div class="next-section"><a href='#discover'>Find recipes</a></div>
-
         </section>
 
+        <!-- Discovering Tastes Section -->
         <section class="body-section" id="discover">
             <div>
                 <h2>Discovering Recipes</h2>
@@ -88,58 +95,72 @@
                         <li>Search by chef</li>
                     </ul>
                 </div>
+                <div class="carousel">
+                    <img src="images/meal-one.jpg" />
+                    <img src="images/meal-two.jpg" />
+                    <img src="images/meal-three.jpg" />
+                    <img src="images/meal-four.jpg" />
+                    <img src="images/meal-five.jpg" />
+                    <img src="images/meal-six.jpg" />
+                </div> 
                 <hr>
                 <a href="https://chef-portfolio.netlify.com/"><button id="discover-link">Get cooking</button></a> <br>
-                <div class="next-section"><a href='#featured-recipe'>Featured dishes</a></div>
             </div>
         </section>
 
+        <!-- Featured recipes section -->
         <section class="body-section" id="featured-recipe">
             <div>
                 <h2>Featured Recipes</h2>
-                <p class="important-text">Join over 92,000 others and receive exclusive recipes from premier chefs.</p>
+                <p>Join over 92,000 others and receive exclusive recipes from premier chefs.</p>
             </div>
             <form>
                 <input class="email" type="text" name="email" placeholder="Email Address">
                 <button>Get my recipes</button>
             </form>
             <img src="images/Header-Images-13.1Artboard-9.jpg">
-            <div class="next-section"><a href='#testimonials'>Why chef portfolio?</a></div>
         </section>
 
+        <!-- Testimonials section -->
         <section class="body-section" id="testimonials">
-            <div>
-                <h2>Happy Cooks</h2>
-            </div>
+            <div class = testimonial-info>
+                <div>
+                    <h2>Happy Cooks</h2>
+                    <p class="important-text">Join chef portfolio today to join all of our satiated customers.</p>
+                </div>
 
-            <div class="body-container testimonials">
-                    <div class='card-content active' data-tab ="1">
-                        <p>"No website has as many diverse and searchable recipes as chef portfolio." <br><br><span>Beth V.</span></p>
-                    </div>
-    
-                    <div class='card-content' data-tab ="2">
-                        <p>"When I need to find a quick, easy recipe for my family of six, chef portfolio is always the first place I go to." <br><br><span>Bill C.</span></p>
-                    </div>
-    
-                    <div class='card-content' data-tab ="3">
-                        <p>"Many websites let you share pictures of food and your recipes. But no site lets you share as easily as chef portfolio." <br><br><span>Lenny G.</span></p>
-                    </div>
-    
-                    <div class='card-content' data-tab ="4">
-                        <p>"As a sixty-three year old, I knew I had a lot of great recipes. But I had no clue how to write a blog! Then chef portfolio came along and now all my grandchildren are stealing my recipes!" <br><br><span>Angela W.</span></p>         
-                    </div>
-            </div>
-            
-            <div class="testimonial-selector">
-                <ol>
-                    <li><button class='active-button' data-tab='1'></button></li>
-                    <li><button data-tab ='2'></button></li>
-                    <li><button data-tab='3'></button></li>
-                    <li><button data-tab='4'></button></li>
-                </ol>
+                <div class="body-container testimonials">
+                        <div class='card-content active' data-tab ="1">
+                            <p>"No website has as many diverse and searchable recipes as chef portfolio." <br><br><span>Beth V.</span></p>
+                        </div>
+        
+                        <div class='card-content' data-tab ="2">
+                            <p>"When I need to find a quick, easy recipe for my family of six, chef portfolio is always the first place I go to." <br><br><span>Bill C.</span></p>
+                        </div>
+        
+                        <div class='card-content' data-tab ="3">
+                            <p>"Many websites let you share pictures of food and your recipes. But no site lets you share as easily as chef portfolio." <br><br><span>Lenny G.</span></p>
+                        </div>
+        
+                        <div class='card-content' data-tab ="4">
+                            <p>"As a sixty-three year old, I knew I had a lot of great recipes. But I had no clue how to write a blog! Then chef portfolio came along and now all my grandchildren are stealing my recipes!" <br><br><span>Angela W.</span></p>         
+                        </div>
+                </div>
+                
+                <div class="testimonial-selector">
+                    <ol>
+                        <li><button class='active-button' data-tab='1'></button></li>
+                        <li><button data-tab ='2'></button></li>
+                        <li><button data-tab='3'></button></li>
+                        <li><button data-tab='4'></button></li>
+                    </ol>
+                </div>
+
+                <p class="mission-statement">Something about passion for food, health, anything? Mission statement type thing</p>
             </div>
         </section>
 
+        <!-- Footer -->
         <footer>
             <div class="footer">
                 <h3>Find us on ...</h3>

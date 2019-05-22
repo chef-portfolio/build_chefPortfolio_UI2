@@ -1,19 +1,37 @@
 #share{
+    background: white;
     .body-container{
-        .flex(@direction: column, @justify: space-around);
+        justify-content: space-around;
         height: 55%;
+        margin-top: 2rem;
+
+        @media(min-width:600px){
+            height: 65%;
+        }
+
+        @media(min-width:700px){
+            height:75%;
+        }
+
     }
     .card-content{
         height: 30%;
-        margin: 0 3rem;
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        .flex(@justify: space-between);
+
+        @media(min-width:768px){
+            .flex(@justify:center);
+        }
         p{
             font-size: @font-small;
             margin: auto;
         }
-        .flex(@justify: space-between);
 
         img{
-            width: 13rem;
+            width: 50%;
+            max-width: 300px;
             height: auto;
         }
     }
@@ -26,17 +44,12 @@
             .button-design(@nav-color, white, 1.6rem, 0.4rem);
             font-family: @font-body;
             border: 1px solid @nav-color;
-            width: 50%;
+            width: 20rem;
             display: block;
             margin: 2rem auto 0;
             outline: none;
             cursor: pointer;
 
         }
-    }
-
-    .next-section{
-        bottom: 0;
-        text-decoration: underline;
     }
 }
