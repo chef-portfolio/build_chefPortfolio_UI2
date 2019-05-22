@@ -164,6 +164,7 @@ img {
 .container {
   margin: 0 auto;
   width: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 1280px) {
   .container {
@@ -628,11 +629,11 @@ img {
 }
 #discover {
   background: #5a6474;
-  max-height: 700px;
+  height: 606px;
 }
 @media (min-width: 768px) {
   #discover {
-    max-height: 100vh;
+    height: 928px;
   }
 }
 #discover h2 {
@@ -643,12 +644,6 @@ img {
 }
 #discover p {
   color: white;
-  margin-top: 4rem;
-}
-@media (min-width: 768px) {
-  #discover p {
-    margin-top: 0;
-  }
 }
 #discover hr {
   margin: 2rem 0;
@@ -659,12 +654,6 @@ img {
 }
 #discover .body-container {
   padding-top: 1rem;
-  margin-top: 4rem;
-}
-@media (min-width: 768px) {
-  #discover .body-container {
-    margin-top: 0;
-  }
 }
 #discover .body-container .search-features-list ul {
   color: white;
@@ -698,9 +687,44 @@ img {
   outline: none;
   cursor: pointer;
 }
+#curveUpColor path {
+  fill: white;
+  stroke: white;
+  display: block;
+}
+.ss-style-doublediagonal {
+  z-index: 1;
+  padding-top: 6em;
+  background: #5a6474;
+  position: relative;
+}
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  transform: rotate(-2deg);
+  transform-origin: 0 0;
+  content: '';
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.ss-style-doublediagonal::before {
+  height: 70%;
+  background: #0c1725;
+  transform: rotate(-4deg);
+  transform-origin: 0% 0;
+}
 #testimonials {
   background: #5a6474;
   max-height: 700px;
+  padding: 0;
 }
 #testimonials .testimonial-info h2 {
   color: white;
