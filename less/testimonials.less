@@ -1,37 +1,6 @@
-.ss-style-doublediagonal {
-	z-index: 1;
-	padding-top: 6em;
-    background: @light-color;
-    position: relative;
-    
-        &::before,
-        &::after {
-            top: 0;
-            left: -25%;
-            z-index: -1;
-            width: 150%;
-            height: 75%;
-            background: inherit;
-            transform: rotate(-2deg);
-            transform-origin: 0 0;
-            content: '';
-            display: block;
-            position: absolute;
-            pointer-events: none;
-            box-sizing: border-box;
-            overflow: hidden;
-        }
-
-        &::before{
-            height: 70%;
-            background: @dark-color;
-            transform: rotate(-4deg);
-            transform-origin: 0% 0;
-        }
-}
-
 #testimonials{
     background: @light-color;
+    min-height: 600px;
     max-height: 700px;
     padding: 0;
     .testimonial-info{
@@ -57,8 +26,6 @@
 
                 span{
                     font-style: none;
-                    font-weight: bold;
-                    letter-spacing: 0.2rem;
                 }
             }
 
@@ -96,3 +63,34 @@
     }
 }
 
+.ss-style-doublediagonal {
+	z-index: 1;
+	padding-top: 6em;
+    background: @light-color;
+    position: relative;
+    
+        &::before,
+        &::after {
+            top: 0;
+            left: -25%;
+            z-index: -1;
+            width: 150%;
+            height: 75%;
+            background: inherit;
+            transform: rotate(-2deg);
+            transform-origin: 0 0;
+            content: '';
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        &::before{
+            height: 70%;
+            background: @dark-color;
+            transform: rotate(-4deg);
+            transform-origin: 0% 0;
+        }
+}
