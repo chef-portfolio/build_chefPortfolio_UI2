@@ -5,8 +5,16 @@
         color:white;
     }
 
+    .important-text{
+        margin-top: 2rem;
+    }
     p{
         color: white;
+        margin-top: 4rem;
+
+        @media (min-width:768px){
+            margin-top: 0;
+        }
     }
 
     hr {
@@ -19,6 +27,11 @@
 
     .body-container{
         padding-top: 1rem;
+        margin-top: 4rem;
+
+        @media (min-width: 768px){
+            margin-top: 0;
+        }
 
         .search-features-list{
 
@@ -45,7 +58,7 @@
                 .button-design(white, @nav-color, 1.6rem, 0.4rem);
                 font-family: @font-body;
                 border: 1px solid @nav-color;
-                width: 50%;
+                width: 20rem;
                 display: block;
                 margin: 2rem auto 0;
                 outline: none;
@@ -55,10 +68,4 @@
         }
     }
 
-    .next-section{
-        a{
-        color:white;
-        text-decoration: underline;
-        }
-    }
 }

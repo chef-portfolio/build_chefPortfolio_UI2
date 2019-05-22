@@ -8,6 +8,7 @@
   
   html, body {
     font-family: @font-body; 
+    background: rgba(240,128,128,0.2);
   }
   
   h1, h2, h3, h4, h5 {
@@ -38,10 +39,16 @@
   }
   
   .container {
-    width: 100%;
     margin: 0 auto;
-  }
+    width: 100%;
+
+    @media screen and (min-width: 1280px) {
+        width: 960px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1280px) {
+            width: 960px;
+            max-width: calc(100% - 30px);
+    }
   
-  .bodySection{
-      min-height: 40vh;
-  }
+}
