@@ -49,18 +49,38 @@
         color:white;
     }
     p{
-        width:50%;
-        margin-top: 5rem;
+        width:80%;
+        margin: 2rem auto 0;
         color: white;
     }
-
+    img{
+        
+        margin: 2rem auto 0;
+        display:block;
+        
+    }
     .body-container{
         margin-left: 1.5rem;
         padding-top: 1rem;
 
         .card-content{
-            padding:2rem;
-            color:white;
+
+            ul{ 
+                color:white;
+                margin-left:30%;
+                font-size: @font-small;
+                font-family: @font-body;
+                list-style-type: disc;
+                li{
+                    padding: 0.5rem;
+                }
+            }
+        }
+
+        a{
+            button{
+                .button-design(white, @nav-color, @font-medium, 0.3rem);
+            }
         }
     }
 
