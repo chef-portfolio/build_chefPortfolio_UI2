@@ -19,7 +19,6 @@
 
             <div class="recipe-search">
                 <div class='search-icon'><a href="https://chef-portfolio.netlify.com/"><img src="images/Antu_dialog-icon-preview.svg.png"></a></div>
-                <!-- <input placeholder="Discover new tastes..." type="search" class = "dropdown-search hidden-search"> -->
             </div>
 
             <nav>
@@ -50,27 +49,22 @@
         <section class = "body-section" id="share">
             <div>
                 <h2>Sharing Recipes</h2>
-                <p>Sharing recipes has never been easier.</p>
+                <p class="important-text">Sharing recipes has never been easier.</p>
             </div>
             <div class="body-container">
                 <div class='card-content'>
-                    <h3>Step 1:</h3>
                     <p>Register a new chef account.</p>
+                    <div class="step-svg"><img src="images/undraw_add_user_ipe3.png"></div>
+                </div>
+
+                <div class='card-content reverse'>
+                    <div class="step-svg"><img src="images/undraw_chef_lbjx.png"></div>
+                    <p>Add your ingredient and instructions.</p>
                 </div>
 
                 <div class='card-content'>
-                    <h3>Step 2:</h3>
-                    <p>Choose from one of our many templates.</p>
-                </div>
-
-                <div class='card-content'>
-                    <h3>Step 3:</h3>
-                    <p>Choose your ingredients and input your instructions.</p>
-                </div>
-
-                <div class='card-content'>
-                    <h3>Step 4:</h3>
-                    <p>Upload and share with friends!</p>         
+                    <p>Upload and share with friends!</p>  
+                    <div class="step-svg"><img src="images/undraw_done_a34v.png"></div>       
                 </div>
                 <div class="next-section"><a href='#discover'>Find recipes</a></div>
             </div>
@@ -80,11 +74,12 @@
         <section class="body-section" id="discover">
             <div>
                 <h2>Discovering Recipes</h2>
-                <p>Satisfy your cravings with our extensive recipe collection.</p>
+                <p class="important-text">Satisfy your cravings with our extensive recipe collection.</p>
             </div>
+            <hr>
             <p>Our new interactive search function allows you to:</p>
             <div class="body-container">
-                <div class='card-content'>
+                <div class='search-features-list'>
                     <ul>
                         <li>Filter by meal type</li>
                         <li>Search by dish</li>
@@ -92,6 +87,7 @@
                         <li>Search by chef</li>
                     </ul>
                 </div>
+                <hr>
                 <a href="https://chef-portfolio.netlify.com/"><button id="discover-link">Get cooking</button></a> <br>
                 <div class="next-section"><a href='#featured-recipe'>Featured dishes</a></div>
             </div>
@@ -100,24 +96,16 @@
         <section class="body-section" id="featured-recipe">
             <div>
                 <h2>Featured Recipes</h2>
-                <p>Join over 92,000 others and receive exclusive recipes from premier chefs.</p>
+                <p class="important-text">Join over 92,000 others and receive exclusive recipes from premier chefs.</p>
             </div>
             <form>
-                
                 <input class="email" type="text" name="email" placeholder="Email Address">
-                
-                <!-- <p>Select which meals you would like to get recipes for:
-                    <br>
-                    <input type="checkbox" value="Breakfast"> Breakfast
-                    <input type="checkbox" value="Lunch"> Lunch
-                    <input type="checkbox" value="Dinner"> Dinner
-                    <input type="checkbox" value="All"> All
-                </p> -->
                 <button>Get my recipes</button>
             </form>
             <img src="images/Header-Images-13.1Artboard-9.jpg">
             <div class="next-section"><a href='#testimonials'>Why chef portfolio?</a></div>
         </section>
+
         <section class="body-section" id="testimonials">
             <div>
                 <h2>Happy Cooks</h2>
