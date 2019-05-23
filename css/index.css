@@ -371,7 +371,7 @@ img {
   width: 60%;
   text-align: center;
 }
-@media (min-width: 320px) {
+@media (min-width: 360px) {
   .fixed-nav .inner-nav .logo {
     font-size: 4rem;
   }
