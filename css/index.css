@@ -192,7 +192,7 @@ img {
   position: relative;
   top: 52%;
   left: 39%;
-  width: fit-content;
+  width: max-content;
 }
 .banner .tag_line span {
   position: relative;
@@ -238,7 +238,7 @@ img {
   position: relative;
   margin-top: 5rem;
   left: 50%;
-  width: fit-content;
+  width: max-content;
 }
 .banner .tag_line div a {
   text-decoration: underline;
@@ -407,7 +407,7 @@ img {
     width: 40%;
     padding-right: 5rem;
     align-self: flex-end;
-    height: fit-content;
+    height: max-content;
     cursor: arrow;
   }
 }
@@ -460,7 +460,7 @@ img {
   .fixed-nav .inner-nav nav .dropdown-menu a {
     font-size: 1.5rem;
     white-space: nowrap;
-    width: fit-content;
+    width: max-content;
   }
 }
 .fixed-nav .inner-nav nav .hidden-menu {
@@ -773,7 +773,7 @@ img {
   list-style-position: inside;
   display: block;
   margin: 0 auto;
-  width: fit-content;
+  width: max-content;
 }
 #discover .body-container .search-features-list ul li {
   padding: 0.5rem;
