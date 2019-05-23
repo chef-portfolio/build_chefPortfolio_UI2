@@ -1,0 +1,108 @@
+.about-container{
+    padding-top: 7rem;
+    background: @light-color;
+
+    h1{
+        padding: 4rem;
+        text-align: center;
+        font-family: @font-headers;
+        font-size: @font-huge;
+        color: white;
+    }
+
+    .info-box{
+        .flex(@justify: space-between, @direction: column);
+        height: fit-content;
+        @media(min-width: 768px){
+            .flex(@direction: row, @justify: space-between);
+            min-height: 1000px;
+        }
+    }
+    .team-members{
+        font-size: @font-medium;
+        font-family: @font-headers;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        @media(min-width:768px){
+            width: 30%;
+        }
+        ul{
+            .flex(space-between);
+            @media(min-width: 768px){
+                display: block;
+            }
+        }
+        li{
+            padding: 5rem 0;
+        }
+
+        .active{
+            color: white;
+        }
+        hr {
+            display: none;
+            @media(min-width: 768px){
+                display:block;
+                border: 0;
+                width: 90%;
+                height: 1px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+            }
+        }
+    }
+
+    .member-card{
+        width: 90%;
+        margin: 0 auto 2rem;
+        @media(min-width: 768px){
+            width: 60%;
+        }
+        div{
+            padding: 0;
+            @media(min-width:768px){
+                padding-top: 5rem;
+            }
+            display: none;
+            font-family: @font-body;
+
+            a{
+                margin: 1rem auto 1rem;
+                padding: 0;
+                order: 1;
+            }
+            h3{
+                font-size: @font-large;
+                margin: 0 auto 1rem;
+                padding-top: 2rem;
+                color: white;
+                order: 0;
+            }
+
+            div{
+                border: 2px solid white;
+                display: block;
+                width: 30%;
+                order: -1;
+                padding: 0rem;
+                margin: 0 auto;
+
+                img{
+                max-width: 100%;
+                height: auto;
+                }
+            }
+
+            p{
+                color: white;
+                text-align: left;
+                order: 2;
+            }
+        }
+        .active{
+            .flex(@direction: column);
+            .animated;
+            .fadeInUp;
+        }
+    }
+}
