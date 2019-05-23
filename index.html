@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/nav.js" async></script>
     <script src="js/testimonials.js" async></script>
-    <script src="js/Carousel.js" async></script>
 
 </head>
 <body>
@@ -79,6 +78,7 @@
         </section>
 
         <!-- Discovering Tastes Section -->
+        <section class="ss-style-doublediagonal"></section>
         <section class="body-section" id="discover">
             <div>
                 <h2>Discovering Recipes</h2>
@@ -95,14 +95,7 @@
                         <li>Search by chef</li>
                     </ul>
                 </div>
-                <div class="carousel">
-                    <img src="images/meal-one.jpg" />
-                    <img src="images/meal-two.jpg" />
-                    <img src="images/meal-three.jpg" />
-                    <img src="images/meal-four.jpg" />
-                    <img src="images/meal-five.jpg" />
-                    <img src="images/meal-six.jpg" />
-                </div> 
+                
                 <hr>
                 <a href="https://chef-portfolio.netlify.com/"><button id="discover-link">Get cooking</button></a> <br>
             </div>
@@ -117,7 +110,7 @@
             </div>
             <form>
                 <input class="email" type="text" name="email" placeholder="Email Address">
-                <button>Get my recipes</button>
+                <button>Get recipes</button>
             </form>
             <img src="images/Header-Images-13.1Artboard-9.jpg">
         </section>
@@ -130,7 +123,14 @@
                     <h2>Happy Cooks</h2>
                     <p class="important-text">Join chef portfolio today to join all of our satiated customers.</p>
                 </div>
-
+                <section class="testimonial-carousel">
+                <div class="carousel">
+                        <img data-tab ="1" src="images/meal-one.jpg" />
+                        <img data-tab ="2" src="images/meal-two.jpg" />
+                        <img data-tab ="3" src="images/meal-three.jpg" />
+                        <img data-tab ="4" src="images/meal-four.jpg" />
+                        <img data-tab ="5" src="images/meal-five.jpg" />
+                </div> 
                 <div class="body-container testimonials">
                         <div class='card-content active' data-tab ="1">
                             <p>"No website has as many diverse and searchable recipes as chef portfolio." <br><br><span>Beth V.</span></p>
@@ -147,6 +147,9 @@
                         <div class='card-content' data-tab ="4">
                             <p>"As a sixty-three year old, I knew I had a lot of great recipes. But I had no clue how to write a blog! Then chef portfolio came along and now all my grandchildren are stealing my recipes!" <br><br><span>Angela W.</span></p>         
                         </div>
+                        <div class='card-content' data-tab ="5">
+                                <p>"All I wanted was a one stop shop for recipes and now I found that with chef portfolio!" <br><br><span>Jenn V.</span></p>         
+                        </div>
                 </div>
                 
                 <div class="testimonial-selector">
@@ -155,10 +158,10 @@
                         <li><button data-tab ='2'></button></li>
                         <li><button data-tab='3'></button></li>
                         <li><button data-tab='4'></button></li>
+                        <li><button data-tab='5'></button></li>
                     </ol>
                 </div>
-
-                <p class="mission-statement">Something about passion for food, health, anything? Mission statement type thing</p>
+                </section>
             </div>
         </section>
         

@@ -459,7 +459,6 @@ img {
   }
 }
 .body-section {
-  height: 100vh;
   padding-top: 7rem;
 }
 .body-section h2 {
@@ -485,6 +484,64 @@ img {
   font-style: italic;
   font-size: 2.2rem;
   margin-top: 2rem;
+}
+.ss-style-doublediagonal {
+  z-index: 1;
+  padding-top: 6em;
+  background: #5a6474;
+  position: relative;
+}
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  transform: rotate(-2deg);
+  transform-origin: 0 0;
+  content: '';
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.ss-style-doublediagonal::before {
+  height: 70%;
+  background: #0c1725;
+  transform: rotate(-4deg);
+  transform-origin: 0% 0;
+}
+.ss-style-doublediagonal-backwards {
+  z-index: 1;
+  padding-top: 1rem;
+  background: #5a6474;
+  position: relative;
+}
+.ss-style-doublediagonal-backwards::before,
+.ss-style-doublediagonal-backwards::after {
+  top: 1rem;
+  left: 125%;
+  z-index: -1;
+  width: 150%;
+  height: 600%;
+  background: inherit;
+  transform: rotate(178deg);
+  transform-origin: 0 0;
+  content: '';
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.ss-style-doublediagonal-backwards::before {
+  height: 600%;
+  background: #0c1725;
+  transform: rotate(176deg);
+  transform-origin: 0% 0%;
 }
 .footer {
   padding-top: 2rem;
@@ -522,10 +579,11 @@ img {
 #share {
   background: white;
   min-height: 650px;
+  height: 100vh;
 }
 @media (min-width: 600px) {
   #share {
-    min-height: 900px;
+    min-height: 1050px;
   }
 }
 #share .body-container {
@@ -540,7 +598,7 @@ img {
 }
 @media (min-width: 700px) {
   #share .body-container {
-    height: 75%;
+    height: 650px;
   }
 }
 #share .card-content {
@@ -638,12 +696,7 @@ img {
 }
 #discover {
   background: #5a6474;
-  max-height: 700px;
-}
-@media (min-width: 768px) {
-  #discover {
-    min-height: 900px;
-  }
+  min-height: 600px;
 }
 #discover h2 {
   color: white;
@@ -707,40 +760,15 @@ img {
   outline: none;
   cursor: pointer;
 }
-.ss-style-doublediagonal-backwards {
-  z-index: 1;
-  padding-top: 1rem;
-  background: #5a6474;
-  position: relative;
-}
-.ss-style-doublediagonal-backwards::before,
-.ss-style-doublediagonal-backwards::after {
-  top: 1rem;
-  left: 125%;
-  z-index: -1;
-  width: 150%;
-  height: 600%;
-  background: inherit;
-  transform: rotate(178deg);
-  transform-origin: 0 0;
-  content: '';
-  display: block;
-  position: absolute;
-  pointer-events: none;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.ss-style-doublediagonal-backwards::before {
-  height: 600%;
-  background: #0c1725;
-  transform: rotate(176deg);
-  transform-origin: 0% 0%;
-}
 #testimonials {
   background: #5a6474;
-  min-height: 600px;
-  max-height: 700px;
+  height: 500px;
   padding: 0;
+}
+@media (min-width: 768px) {
+  #testimonials {
+    height: 700px;
+  }
 }
 #testimonials .testimonial-info h2 {
   color: white;
@@ -752,9 +780,15 @@ img {
   color: white;
   padding-top: 10rem;
 }
+@media (min-width: 768px) {
+  #testimonials .testimonial-info .body-container {
+    padding-top: 2rem;
+  }
+}
 #testimonials .testimonial-info .body-container .card-content {
   display: none;
   margin: 0 auto;
+  animation: photo-transition 4.5s ease-in;
 }
 #testimonials .testimonial-info .body-container .card-content p {
   font-style: italic;
@@ -783,44 +817,25 @@ img {
   border: 0;
   margin: 0.3rem;
   background-color: white;
+  outline: none;
 }
 #testimonials .testimonial-info .testimonial-selector .active-button {
   outline: none;
   background-color: #232a34;
 }
-#testimonials .mission-statement {
-  color: white;
-  font-size: 1.5rem;
-  margin-top: 10rem;
-}
-.ss-style-doublediagonal {
-  z-index: 1;
-  padding-top: 6em;
-  background: #5a6474;
-  position: relative;
-}
-.ss-style-doublediagonal::before,
-.ss-style-doublediagonal::after {
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  transform: rotate(-2deg);
-  transform-origin: 0 0;
-  content: '';
-  display: block;
-  position: absolute;
-  pointer-events: none;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.ss-style-doublediagonal::before {
-  height: 70%;
-  background: #0c1725;
-  transform: rotate(-4deg);
-  transform-origin: 0% 0;
+@keyframes photo-transition {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .carousel {
   width: 60%;

@@ -1,5 +1,4 @@
 .body-section{
-    height: 100vh;
     padding-top: 7rem;
 
     h2{
@@ -28,3 +27,66 @@
     }
 }
 
+.ss-style-doublediagonal {
+	z-index: 1;
+	padding-top: 6em;
+    background: @light-color;
+    position: relative;
+    
+        &::before,
+        &::after {
+            top: 0;
+            left: -25%;
+            z-index: -1;
+            width: 150%;
+            height: 75%;
+            background: inherit;
+            transform: rotate(-2deg);
+            transform-origin: 0 0;
+            content: '';
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        &::before{
+            height: 70%;
+            background: @dark-color;
+            transform: rotate(-4deg);
+            transform-origin: 0% 0;
+        }
+}
+
+.ss-style-doublediagonal-backwards {
+	z-index: 1;
+	padding-top: 1rem;
+    background: @light-color;
+    position: relative;
+    
+        &::before,
+        &::after {
+            top: 1rem;
+            left: 125%;
+            z-index: -1;
+            width: 150%;
+            height: 600%;
+            background: inherit;
+            transform: rotate(178deg);
+            transform-origin: 0 0;
+            content: '';
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        &::before{
+            height: 600%;
+            background: @dark-color;
+            transform: rotate(176deg);
+            transform-origin: 0% 0%;
+        }
+}
