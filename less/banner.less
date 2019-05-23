@@ -6,7 +6,7 @@
     background-blend-mode: lighten;
     width: 100%;
     height: 100vh; 
-    min-height:650px;
+    min-height:675px;
 
     .tag_line{
         position: relative;
@@ -17,21 +17,30 @@
         span{
             position:relative;
             left:10%;
-            font-size: @font-large;
+            font-size: @font-medium;
             font-family: @font-headers;
             color: @dark-color;
             font-weight: bold;
+
+            @media(min-width:320px){
+                font-size: @font-large;
+            }
         }
 
         button{
-            .button-design(@color:@light-color, @font-color: white, @font-size: @font-medium, @radius: 0.4rem, @top: 0, @bottom: 0);
+            .button-design(@color:@light-color, @font-color: white, @font-size: @font-small, @radius: 0.4rem, @top: 0, @bottom: 0);
             border: 1px solid @nav-color;
             cursor: pointer;
             padding: 0.6rem;
             margin-top: 3rem;
-            width: 20rem;
+            width: 15rem;
             position: relative;
             left: 7%;
+
+            @media(min-width:320px){
+                width:20rem;
+                font-size: @font-medium;
+            }
 
             &:focus{
                 outline:none;

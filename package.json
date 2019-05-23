@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "animate.less": "^2.2.0"
+  }
+}

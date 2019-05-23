@@ -12,7 +12,7 @@
         margin: 0 auto;
         
         .logo{
-            font-size: @font-huge;
+            font-size: @font-large;
             font-family: @font-logo;
             line-height: 7rem;
             color: @nav-font;
@@ -21,8 +21,15 @@
             width: 60%;
             text-align: center;
 
+            @media(min-width: 320px){
+                font-size: @font-huge;
+            }
+
             @media(min-width: 1000px){
                 width: 40%;
+                order:0;
+                text-align: left;
+                padding-left: 10rem;
             }
             
             a{
@@ -50,7 +57,8 @@
 
             @media (min-width: 1000px){
                 padding: 0;
-                width: 35%;
+                width: 40%;
+                padding-right: 5rem;
                 align-self: flex-end;
                 height: fit-content;
                 cursor: arrow;
