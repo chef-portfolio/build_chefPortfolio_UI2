@@ -11,4 +11,9 @@ This was a project built during one of Lambda School's Build Weeks. As the Web U
 These pages are responsive with numerous breakpoints to account for desktop, tablet, and mobile devices (was build with a mobile-first design). The animate.less library was used to add animations. 
 
 # Contributors
-The other members of this project are: *Addison Stavlo* (Team Lead), *Tigran Sargsyan* (front-end), *Alexandria Supriana* (back-end), and *Benjamin Ajewole* (Web UI Developer). This project would not have been completed without their work and assistance. 
+The other members of this project are: [Addison Stavlo][0] (Team Lead), [Tigran Sargsyan][1] (front-end), [Alexandria Supriana][2] (back-end), and [Benjamin Ajewole][3] (Web UI Developer). This project would not have been completed without their work and assistance. 
+
+[0]:https://github.com/Addison-Stavlo
+[1]: https://github.com/umbur
+[2]: https://github.com/asupriana
+[3]: https://github.com/Rexben001
