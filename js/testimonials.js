@@ -1,27 +1,34 @@
 class TestimonialCarousel{
     constructor(section){
         this.testimonialCarousel = section;
-        this.testimonialPool = [...this.testimonialCarousel.querySelectorAll('.card-content')];
-        this.buttonPool = [...this.testimonialCarousel.querySelectorAll('button')];
-        this.imagePool = [...this.testimonialCarousel.querySelectorAll('img')];
-        this.index = 0;
-        this.currentTest = this.testimonialPool[this.index];
-        this.currentButton = this.buttonPool[this.index];
-        this.currentImage = this.imagePool[this.index];
-        this.currentImage.style.display = 'flex';
-    }
+        this.info = [
+            {varName: 'testimonialPool', querySearch: '.card-content', shownItem: 'currentTest', kill: (el) => el.classList.remove('active'), show: (el) => el.classList.add('active') },
+            {varName: 'buttonPool', querySearch: 'button', shownItem: 'currentButton', kill: (el) => el.classList.remove('active-button'), show: (el) => el.classList.add('active-button') },
+            {varName: 'imagePool', querySearch: 'img', shownItem: 'currentImage', kill: (el) => el.style.display = 'none', show: (el) => el.style.display = 'flex' }
+        ];
 
+        // Creates three arrays: texts, buttons, images 
+        this.info.forEach(infoObj => {
+            this[infoObj.varName] = [...this.testimonialCarousel.querySelectorAll(infoObj.querySearch)];
+        })
+        this.index = 0;
+        this.update();
+    }
     scroll(){
         this.index = this.index === this.testimonialPool.length-1 ? 0 : this.index+1; 
-        this.testimonialPool.forEach(el => el.classList.remove('active'));
-        this.buttonPool.forEach(el => el.classList.remove('active-button'));
-        this.imagePool.forEach(el => el.style.display = 'none');
-        this.currentTest = this.testimonialPool[this.index];
-        this.currentButton = this.buttonPool[this.index];
-        this.currentImage = this.imagePool[this.index];
-        this.currentTest.classList.add('active');
-        this.currentButton.classList.add('active-button');
-        this.currentImage.style.display = 'flex';
+        
+        // Deactivate all currently shown items
+        this.info.forEach(infoObj => this[infoObj.varName].forEach(infoObj.kill));
+        this.update();
+    }
+
+    update(){
+        this.info.forEach(infoObj => {
+            //Resets the currently shown item to new index value
+            this[infoObj.shownItem] = this[infoObj.varName][this.index];
+            //Shows the currently selected item
+            infoObj.show(this[infoObj.shownItem]);
+        });
     }
 }
 
@@ -42,6 +49,8 @@ class TestimonialButton{
         this.content.select();
         this.image.select();
         testScroll.index = this.tab-1;
+        clearInterval(scrollTimer);
+        scrollTimer = setInterval(() => testScroll.scroll(),4500);
     }
 
 }
@@ -76,4 +85,4 @@ testimonialButtons.forEach(button => new TestimonialButton(button));
 
 let testimonialCarousel = document.querySelector('.testimonial-carousel');
 let testScroll = new TestimonialCarousel(testimonialCarousel);
-setInterval(() => testScroll.scroll(), 4500)
+let scrollTimer = setInterval(() => testScroll.scroll(), 4500)

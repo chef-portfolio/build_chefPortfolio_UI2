@@ -192,7 +192,8 @@ img {
   position: relative;
   top: 52%;
   left: 39%;
-  width: max-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .banner .tag_line span {
   position: relative;
@@ -238,7 +239,8 @@ img {
   position: relative;
   margin-top: 5rem;
   left: 50%;
-  width: max-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .banner .tag_line div a {
   text-decoration: underline;
@@ -407,7 +409,8 @@ img {
     width: 40%;
     padding-right: 5rem;
     align-self: flex-end;
-    height: max-content;
+    height: fit-content;
+    height: -moz-fit-content;
     cursor: arrow;
   }
 }
@@ -460,7 +463,8 @@ img {
   .fixed-nav .inner-nav nav .dropdown-menu a {
     font-size: 1.5rem;
     white-space: nowrap;
-    width: max-content;
+    width: fit-content;
+    width: -moz-fit-content;
   }
 }
 .fixed-nav .inner-nav nav .hidden-menu {
@@ -773,7 +777,8 @@ img {
   list-style-position: inside;
   display: block;
   margin: 0 auto;
-  width: max-content;
+  width: fit-content;
+  width: -moz-fit-content;
 }
 #discover .body-container .search-features-list ul li {
   padding: 0.5rem;
